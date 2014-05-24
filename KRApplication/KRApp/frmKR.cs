@@ -19,6 +19,8 @@ namespace KRApplication
             InitializeComponent();
         }
 
+        #region NgoanHH
+
         private void ToolKanjiOrVoc_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (ToolKanjiOrVoc.SelectedIndex == 0)
@@ -97,5 +99,7 @@ namespace KRApplication
                 //ExcelApp.Quit;
             }
         }
+
+        #endregion
     }
 }
