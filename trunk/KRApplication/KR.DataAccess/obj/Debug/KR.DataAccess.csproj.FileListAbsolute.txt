@@ -6,3 +6,11 @@ C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KR.DataAccess\obj\Debug\KR.DataA
 C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KR.DataAccess\bin\Debug\KR.DataAccess.dll.config
 C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KR.DataAccess\bin\Debug\EntityFramework.dll
 C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KR.DataAccess\bin\Debug\EntityFramework.xml
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KR.DataAccess\bin\Debug\KR.DataAccess.dll.config
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KR.DataAccess\bin\Debug\KR.DataAccess.dll
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KR.DataAccess\bin\Debug\KR.DataAccess.pdb
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KR.DataAccess\bin\Debug\EntityFramework.dll
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KR.DataAccess\bin\Debug\EntityFramework.xml
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KR.DataAccess\obj\Debug\KR.DataAccess.csprojResolveAssemblyReference.cache
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KR.DataAccess\obj\Debug\KR.DataAccess.dll
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KR.DataAccess\obj\Debug\KR.DataAccess.pdb

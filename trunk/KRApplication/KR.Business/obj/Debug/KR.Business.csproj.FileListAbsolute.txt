@@ -16,3 +16,12 @@ M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KR.Business\
 M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KR.Business\obj\Debug\KR.Business.csprojResolveAssemblyReference.cache
 M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KR.Business\obj\Debug\KR.Business.dll
 M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KR.Business\obj\Debug\KR.Business.pdb
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KR.Business\bin\Debug\KR.Business.dll
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KR.Business\bin\Debug\KR.Business.pdb
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KR.Business\bin\Debug\KR.DataAccess.dll
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KR.Business\bin\Debug\EntityFramework.dll
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KR.Business\bin\Debug\KR.DataAccess.pdb
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KR.Business\bin\Debug\EntityFramework.xml
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KR.Business\obj\Debug\KR.Business.csprojResolveAssemblyReference.cache
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KR.Business\obj\Debug\KR.Business.dll
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KR.Business\obj\Debug\KR.Business.pdb
