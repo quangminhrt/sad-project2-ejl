@@ -142,6 +142,7 @@
             this.dgvLesson = new System.Windows.Forms.DataGridView();
             this.TabVRecoder = new System.Windows.Forms.TabPage();
             this.TabKaiwa = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.TabExport = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
             this.dgvExport = new System.Windows.Forms.DataGridView();
@@ -190,7 +191,6 @@
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.cbSkin = new System.Windows.Forms.ToolStripComboBox();
             this.ToolExport = new System.Windows.Forms.ToolStripButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.KRTabControl.SuspendLayout();
             this.TabSlider.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -1226,6 +1226,11 @@
             this.TabKaiwa.Name = "TabKaiwa";
             this.TabKaiwa.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
             // TabExport
             // 
             this.TabExport.Controls.Add(this.button1);
@@ -1570,11 +1575,6 @@
             this.ToolExport.AutoToolTip = false;
             resources.ApplyResources(this.ToolExport, "ToolExport");
             this.ToolExport.Name = "ToolExport";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
             // 
             // FrmMain
             // 
