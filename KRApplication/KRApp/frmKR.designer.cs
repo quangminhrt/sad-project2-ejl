@@ -144,7 +144,6 @@
             this.TabKaiwa = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.TabExport = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
             this.dgvExport = new System.Windows.Forms.DataGridView();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.ToolBackExport = new System.Windows.Forms.ToolStripButton();
@@ -191,6 +190,8 @@
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.cbSkin = new System.Windows.Forms.ToolStripComboBox();
             this.ToolExport = new System.Windows.Forms.ToolStripButton();
+            this.ToolExportOK = new System.Windows.Forms.ToolStripButton();
+            this.fileDialogExport = new System.Windows.Forms.SaveFileDialog();
             this.KRTabControl.SuspendLayout();
             this.TabSlider.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -1233,19 +1234,11 @@
             // 
             // TabExport
             // 
-            this.TabExport.Controls.Add(this.button1);
             this.TabExport.Controls.Add(this.dgvExport);
             this.TabExport.Controls.Add(this.toolStrip1);
             resources.ApplyResources(this.TabExport, "TabExport");
             this.TabExport.Name = "TabExport";
             this.TabExport.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dgvExport
             // 
@@ -1258,7 +1251,8 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolBackExport,
             this.ToolKanjiOrVoc,
-            this.ToolGroupExport});
+            this.ToolGroupExport,
+            this.ToolExportOK});
             resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Name = "toolStrip1";
             // 
@@ -1576,6 +1570,12 @@
             resources.ApplyResources(this.ToolExport, "ToolExport");
             this.ToolExport.Name = "ToolExport";
             // 
+            // ToolExportOK
+            // 
+            resources.ApplyResources(this.ToolExportOK, "ToolExportOK");
+            this.ToolExportOK.Name = "ToolExportOK";
+            this.ToolExportOK.Click += new System.EventHandler(this.ToolExportOK_Click);
+            // 
             // FrmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -1813,8 +1813,9 @@
         private System.Windows.Forms.ToolStripComboBox ToolKanjiOrVoc;
         private System.Windows.Forms.ToolStripComboBox ToolGroupExport;
         private System.Windows.Forms.DataGridView dgvExport;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripButton ToolExportOK;
+        private System.Windows.Forms.SaveFileDialog fileDialogExport;
     }
 }
 

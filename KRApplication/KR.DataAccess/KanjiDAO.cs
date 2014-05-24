@@ -28,25 +28,23 @@ namespace KR.DataAccess
         }
 
 
-        public static bool UpdateLikedKanji(int id, bool isLiked)
+        public static List<Kanji> GetKanjisByLike()
         {
             using (KRDatabaseEntities db = new KRDatabaseEntities())
             {
-                bool result = false;
+                List<Kanji> list = new List<Kanji>();
                 try
                 {
-                    var group = (from k in db.Kanji
-                                 where k.ID == id
-                                 select k).FirstOrDefault();
-                    group.IsLiked = isLiked;
-                    db.SaveChanges();
-                    result = true;
+                    list = (from k in db.Kanji
+                            orderby k.ID ascending
+                            where k.IsLiked == true
+                            select k).ToList();
                 }
                 catch (Exception)
                 {
 
                 }
-                return result;
+                return list;
             }
         }
     }

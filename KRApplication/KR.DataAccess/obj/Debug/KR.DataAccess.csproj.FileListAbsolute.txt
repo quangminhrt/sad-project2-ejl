@@ -14,3 +14,11 @@ M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication
 M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KR.DataAccess\obj\Debug\KR.DataAccess.csprojResolveAssemblyReference.cache
 M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KR.DataAccess\obj\Debug\KR.DataAccess.dll
 M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KR.DataAccess\obj\Debug\KR.DataAccess.pdb
+F:\Project2\KRApplication\KR.DataAccess\bin\Debug\KR.DataAccess.dll.config
+F:\Project2\KRApplication\KR.DataAccess\bin\Debug\KR.DataAccess.dll
+F:\Project2\KRApplication\KR.DataAccess\bin\Debug\KR.DataAccess.pdb
+F:\Project2\KRApplication\KR.DataAccess\bin\Debug\EntityFramework.dll
+F:\Project2\KRApplication\KR.DataAccess\bin\Debug\EntityFramework.xml
+F:\Project2\KRApplication\KR.DataAccess\obj\Debug\KR.DataAccess.csprojResolveAssemblyReference.cache
+F:\Project2\KRApplication\KR.DataAccess\obj\Debug\KR.DataAccess.dll
+F:\Project2\KRApplication\KR.DataAccess\obj\Debug\KR.DataAccess.pdb

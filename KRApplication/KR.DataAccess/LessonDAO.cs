@@ -25,5 +25,44 @@ namespace KR.DataAccess
                 return list;
             }
         }
+
+        public static Lesson GetLessonByName(string name)
+        {
+            using (KRDatabaseEntities db = new KRDatabaseEntities())
+            {
+                Lesson lesson = new Lesson();
+                try
+                {
+                    lesson = (from l in db.Lesson
+                              where l.Name == name
+                              select l).FirstOrDefault();
+                }
+                catch (Exception)
+                {
+
+                }
+                return lesson;
+            }
+        }
+
+
+        public static Lesson GetLessonByID(int id)
+        {
+            using (KRDatabaseEntities db = new KRDatabaseEntities())
+            {
+                Lesson lesson = new Lesson();
+                try
+                {
+                    lesson = (from l in db.Lesson
+                              where l.ID == id
+                              select l).FirstOrDefault();
+                }
+                catch (Exception)
+                {
+
+                }
+                return lesson;
+            }
+        }
     }
 }

@@ -8,6 +8,9 @@ namespace KR.Business
 {
     public class VocabularyService
     {
-
+        public static List<Vocabulary> GetVocabularyByLessonID(int lessonID)
+        {
+            return VocabularyDAO.GetVocabularyByLessonID(lessonID);
+        }
     }
 }
