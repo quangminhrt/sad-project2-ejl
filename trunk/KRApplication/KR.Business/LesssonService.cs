@@ -12,5 +12,15 @@ namespace KR.Business
         {
             return LessonDAO.GetAllLessonName();
         }
+
+        public static Lesson GetLessonByName(string name)
+        {
+            return LessonDAO.GetLessonByName(name);
+        }
+
+        public static Lesson GetLessonByID(int id)
+        {
+            return LessonDAO.GetLessonByID(id);
+        }
     }
 }

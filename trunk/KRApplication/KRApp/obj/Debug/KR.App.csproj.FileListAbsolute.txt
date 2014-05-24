@@ -53,3 +53,19 @@ M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication
 M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KRApp\obj\Debug\KRApplication.FrmMain.resources
 M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KRApp\obj\Debug\KRApp.Properties.Resources.resources
 M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KRApp\obj\Debug\KR.App.csproj.GenerateResource.Cache
+F:\Project2\KRApplication\KRApp\bin\Debug\KRApp.exe.config
+F:\Project2\KRApplication\KRApp\obj\Debug\KRApp.exe
+F:\Project2\KRApplication\KRApp\obj\Debug\KRApp.pdb
+F:\Project2\KRApplication\KRApp\obj\Debug\KR.App.csprojResolveAssemblyReference.cache
+F:\Project2\KRApplication\KRApp\obj\Debug\KRApplication.FrmMain.resources
+F:\Project2\KRApplication\KRApp\obj\Debug\KRApp.Properties.Resources.resources
+F:\Project2\KRApplication\KRApp\obj\Debug\KR.App.csproj.GenerateResource.Cache
+F:\Project2\KRApplication\KRApp\bin\Debug\KRApp.exe
+F:\Project2\KRApplication\KRApp\bin\Debug\KRApp.pdb
+F:\Project2\KRApplication\KRApp\bin\Debug\IrisSkin4.dll
+F:\Project2\KRApplication\KRApp\bin\Debug\KR.Business.dll
+F:\Project2\KRApplication\KRApp\bin\Debug\KR.DataAccess.dll
+F:\Project2\KRApplication\KRApp\bin\Debug\EntityFramework.dll
+F:\Project2\KRApplication\KRApp\bin\Debug\KR.Business.pdb
+F:\Project2\KRApplication\KRApp\bin\Debug\KR.DataAccess.pdb
+F:\Project2\KRApplication\KRApp\bin\Debug\EntityFramework.xml

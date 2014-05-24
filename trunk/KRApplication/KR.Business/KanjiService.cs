@@ -14,9 +14,9 @@ namespace KR.Business
         }
 
 
-        public static bool UpdateLikedKanji(int id, bool isLiked)
+        public static List<Kanji> GetKanjisByLike()
         {
-            return UpdateLikedKanji(id, isLiked);
+            return GetKanjisByLike();
         }
     }
 }
