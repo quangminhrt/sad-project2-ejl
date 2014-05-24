@@ -1,0 +1,18 @@
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KR.Business\bin\Debug\KR.Business.dll
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KR.Business\bin\Debug\KR.Business.pdb
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KR.Business\obj\Debug\KR.Business.csprojResolveAssemblyReference.cache
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KR.Business\obj\Debug\KR.Business.dll
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KR.Business\obj\Debug\KR.Business.pdb
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KR.Business\bin\Debug\KR.DataAccess.dll
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KR.Business\bin\Debug\KR.DataAccess.pdb
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KR.Business\bin\Debug\EntityFramework.dll
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KR.Business\bin\Debug\EntityFramework.xml
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KR.Business\bin\Debug\KR.Business.dll
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KR.Business\bin\Debug\KR.Business.pdb
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KR.Business\bin\Debug\KR.DataAccess.dll
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KR.Business\bin\Debug\EntityFramework.dll
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KR.Business\bin\Debug\KR.DataAccess.pdb
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KR.Business\bin\Debug\EntityFramework.xml
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KR.Business\obj\Debug\KR.Business.csprojResolveAssemblyReference.cache
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KR.Business\obj\Debug\KR.Business.dll
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KR.Business\obj\Debug\KR.Business.pdb

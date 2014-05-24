@@ -1,0 +1,48 @@
+H:\DotNet\KanjiReviewer_Local\KRApplication\KRApp\bin\Debug\KRApp.exe.config
+H:\DotNet\KanjiReviewer_Local\KRApplication\KRApp\bin\Debug\KRDatabase.sdf
+H:\DotNet\KanjiReviewer_Local\KRApplication\KRApp\bin\Debug\KRApp.exe
+H:\DotNet\KanjiReviewer_Local\KRApplication\KRApp\bin\Debug\KRApp.pdb
+H:\DotNet\KanjiReviewer_Local\KRApplication\KRApp\bin\Debug\KR.DataAccess.dll
+H:\DotNet\KanjiReviewer_Local\KRApplication\KRApp\bin\Debug\KR.Model.dll
+H:\DotNet\KanjiReviewer_Local\KRApplication\KRApp\bin\Debug\KR.DataAccess.pdb
+H:\DotNet\KanjiReviewer_Local\KRApplication\KRApp\bin\Debug\KR.Model.pdb
+H:\DotNet\KanjiReviewer_Local\KRApplication\KRApp\obj\Debug\KRApp.csprojResolveAssemblyReference.cache
+H:\DotNet\KanjiReviewer_Local\KRApplication\KRApp\obj\Debug\KRApplication.FrmMain.resources
+H:\DotNet\KanjiReviewer_Local\KRApplication\KRApp\obj\Debug\KRApp.Properties.Resources.resources
+H:\DotNet\KanjiReviewer_Local\KRApplication\KRApp\obj\Debug\KRApp.csproj.GenerateResource.Cache
+H:\DotNet\KanjiReviewer_Local\KRApplication\KRApp\obj\Debug\KRApp.exe
+H:\DotNet\KanjiReviewer_Local\KRApplication\KRApp\obj\Debug\KRApp.pdb
+H:\DotNet\KanjiReviewer_Local\KRApplication\KRApp\bin\Debug\IrisSkin4.dll
+H:\DotNet\KanjiReviewer_Local\KRApplication\KRApp\obj\Debug\KRApp.frmAbout.resources
+H:\DotNet\Kanji Reviewer\KRApplication\KRApp\bin\Debug\KRApp.exe.config
+H:\DotNet\Kanji Reviewer\KRApplication\KRApp\obj\Debug\KRApp.exe
+H:\DotNet\Kanji Reviewer\KRApplication\KRApp\obj\Debug\KRApp.pdb
+H:\DotNet\Kanji Reviewer\KRApplication\KRApp\bin\Debug\KRDatabase.sdf
+H:\DotNet\Kanji Reviewer\KRApplication\KRApp\bin\Debug\KRApp.exe
+H:\DotNet\Kanji Reviewer\KRApplication\KRApp\bin\Debug\KRApp.pdb
+H:\DotNet\Kanji Reviewer\KRApplication\KRApp\bin\Debug\IrisSkin4.dll
+H:\DotNet\Kanji Reviewer\KRApplication\KRApp\bin\Debug\KR.DataAccess.dll
+H:\DotNet\Kanji Reviewer\KRApplication\KRApp\bin\Debug\KR.Model.dll
+H:\DotNet\Kanji Reviewer\KRApplication\KRApp\bin\Debug\KR.DataAccess.pdb
+H:\DotNet\Kanji Reviewer\KRApplication\KRApp\bin\Debug\KR.Model.pdb
+H:\DotNet\Kanji Reviewer\KRApplication\KRApp\obj\Debug\KRApp.csprojResolveAssemblyReference.cache
+H:\DotNet\Kanji Reviewer\KRApplication\KRApp\obj\Debug\KRApplication.FrmMain.resources
+H:\DotNet\Kanji Reviewer\KRApplication\KRApp\obj\Debug\KRApp.Properties.Resources.resources
+H:\DotNet\Kanji Reviewer\KRApplication\KRApp\obj\Debug\KRApp.csproj.GenerateResource.Cache
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\bin\Debug\KRApp.exe.config
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\obj\Debug\KRApp.exe
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\obj\Debug\KRApp.pdb
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\bin\Debug\KRDatabase.sdf
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\bin\Debug\KRApp.exe
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\bin\Debug\KRApp.pdb
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\bin\Debug\IrisSkin4.dll
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\bin\Debug\KR.DataAccess.dll
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\bin\Debug\KR.Model.dll
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\bin\Debug\KR.DataAccess.pdb
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\bin\Debug\KR.Model.pdb
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\obj\Debug\KRApp.csprojResolveAssemblyReference.cache
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\obj\Debug\KRApp.frmAbout.resources
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\obj\Debug\KRApplication.FrmMain.resources
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\obj\Debug\KRApp.Properties.Resources.resources
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\obj\Debug\KRApp.csproj.GenerateResource.Cache
+H:\DotNet\Kanji Reviewer\KRApplication\KRApp\obj\Debug\KRApp.frmSelectGroup.resources
