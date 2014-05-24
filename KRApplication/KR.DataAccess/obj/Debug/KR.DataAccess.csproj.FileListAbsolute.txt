@@ -1,0 +1,8 @@
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KR.DataAccess\bin\Debug\KR.DataAccess.dll
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KR.DataAccess\bin\Debug\KR.DataAccess.pdb
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KR.DataAccess\obj\Debug\KR.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KR.DataAccess\obj\Debug\KR.DataAccess.dll
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KR.DataAccess\obj\Debug\KR.DataAccess.pdb
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KR.DataAccess\bin\Debug\KR.DataAccess.dll.config
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KR.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KR.DataAccess\bin\Debug\EntityFramework.xml

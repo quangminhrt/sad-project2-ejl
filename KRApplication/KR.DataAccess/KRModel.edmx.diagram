@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e2f20b45ec854de088d0a875d6aa241f" Name="Diagram1">
+        <EntityTypeShape EntityType="KRDatabaseModel.GroupSet" Width="1.5" PointX="0.875" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KRDatabaseModel.Kanji" Width="1.5" PointX="4.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="KRDatabaseModel.Lesson" Width="1.5" PointX="1" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="KRDatabaseModel.sysdiagrams" Width="1.5" PointX="3.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="KRDatabaseModel.Vocabulary" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="KRDatabaseModel.FK_Kanji_GroupSet" ManuallyRouted="false" />
+        <AssociationConnector Association="KRDatabaseModel.FK_Vocabulary_Lesson" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

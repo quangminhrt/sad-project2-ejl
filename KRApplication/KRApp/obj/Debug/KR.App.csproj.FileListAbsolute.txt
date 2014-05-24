@@ -1,0 +1,40 @@
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\obj\Debug\KRApplication.FrmMain.resources
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\obj\Debug\KRApp.frmSelectGroup.resources
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\obj\Debug\KRApp.Properties.Resources.resources
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\obj\Debug\KR.App.csproj.GenerateResource.Cache
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\obj\Debug\KRApp.exe
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\obj\Debug\KRApp.pdb
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\bin\Debug\KRApp.exe
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\bin\Debug\KRApp.pdb
+C:\Users\TNH\Desktop\Kanji Reviewer\KRApplication\KRApp\bin\Debug\IrisSkin4.dll
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KRApp\obj\Debug\KRApp.exe
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KRApp\obj\Debug\KRApp.pdb
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KRApp\bin\Debug\KRApp.exe
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KRApp\bin\Debug\KRApp.pdb
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KRApp\bin\Debug\IrisSkin4.dll
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KRApp\obj\Debug\KRApplication.FrmMain.resources
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KRApp\obj\Debug\KRApp.Properties.Resources.resources
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KRApp\obj\Debug\KR.App.csproj.GenerateResource.Cache
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KRApp\bin\Debug\KR.Business.dll
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KRApp\bin\Debug\KR.DataAccess.dll
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KRApp\bin\Debug\KR.Business.pdb
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KRApp\bin\Debug\KR.DataAccess.pdb
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KRApp\obj\Debug\KR.App.csprojResolveAssemblyReference.cache
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KRApp\bin\Debug\KRApp.exe.config
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KRApp\bin\Debug\EntityFramework.dll
+C:\Users\TNH\Desktop\SAD_Project2\KRApplication\KRApp\bin\Debug\EntityFramework.xml
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KRApp\bin\Debug\KRApp.exe.config
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KRApp\obj\Debug\KRApp.exe
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KRApp\obj\Debug\KRApp.pdb
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KRApp\bin\Debug\KRApp.exe
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KRApp\bin\Debug\KRApp.pdb
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KRApp\bin\Debug\KR.Business.dll
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KRApp\bin\Debug\KR.DataAccess.dll
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KRApp\bin\Debug\EntityFramework.dll
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KRApp\bin\Debug\KR.Business.pdb
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KRApp\bin\Debug\KR.DataAccess.pdb
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KRApp\bin\Debug\EntityFramework.xml
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KRApp\obj\Debug\KR.App.csprojResolveAssemblyReference.cache
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KRApp\obj\Debug\KRApplication.FrmMain.resources
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KRApp\obj\Debug\KRApp.Properties.Resources.resources
+M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KRApp\obj\Debug\KR.App.csproj.GenerateResource.Cache

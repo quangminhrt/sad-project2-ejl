@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KRDatabaseModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="KRDatabaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="GroupSet" EntityType="KRDatabaseModel.GroupSet" />
+    <EntitySet Name="Kanji" EntityType="KRDatabaseModel.Kanji" />
+    <EntitySet Name="Lesson" EntityType="KRDatabaseModel.Lesson" />
+    <EntitySet Name="sysdiagrams" EntityType="KRDatabaseModel.sysdiagrams" />
+    <EntitySet Name="Vocabulary" EntityType="KRDatabaseModel.Vocabulary" />
+    <AssociationSet Name="FK_Kanji_GroupSet" Association="KRDatabaseModel.FK_Kanji_GroupSet">
+      <End Role="GroupSet" EntitySet="GroupSet" />
+      <End Role="Kanji" EntitySet="Kanji" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vocabulary_Lesson" Association="KRDatabaseModel.FK_Vocabulary_Lesson">
+      <End Role="Lesson" EntitySet="Lesson" />
+      <End Role="Vocabulary" EntitySet="Vocabulary" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="GroupSet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Meaning" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Kanji">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Word" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Onyomi" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Kunyomi" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Mean" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Voc1" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Voc2" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Voc3" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Voc4" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Voc5" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Hira1" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Hira2" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Hira3" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Hira4" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Hira5" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Mean1" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Mean2" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Mean3" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Mean4" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Mean5" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Level" Type="String" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="GroupSetID" Type="Int32" />
+    <Property Name="IsLiked" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Lesson">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Vocabulary">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Hiragana" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Kanji" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Mean" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="LessonID" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_Kanji_GroupSet">
+    <End Role="GroupSet" Type="KRDatabaseModel.GroupSet" Multiplicity="0..1" />
+    <End Role="Kanji" Type="KRDatabaseModel.Kanji" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GroupSet">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Kanji">
+        <PropertyRef Name="GroupSetID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vocabulary_Lesson">
+    <End Role="Lesson" Type="KRDatabaseModel.Lesson" Multiplicity="1" />
+    <End Role="Vocabulary" Type="KRDatabaseModel.Vocabulary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Lesson">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Vocabulary">
+        <PropertyRef Name="LessonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

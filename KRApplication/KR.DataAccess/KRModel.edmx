@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="KRDatabaseModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="KRDatabaseModelStoreContainer">
+          <EntitySet Name="GroupSet" EntityType="KRDatabaseModel.Store.GroupSet" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Kanji" EntityType="KRDatabaseModel.Store.Kanji" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Lesson" EntityType="KRDatabaseModel.Store.Lesson" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="sysdiagrams" EntityType="KRDatabaseModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Vocabulary" EntityType="KRDatabaseModel.Store.Vocabulary" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Kanji_GroupSet" Association="KRDatabaseModel.Store.FK_Kanji_GroupSet">
+            <End Role="GroupSet" EntitySet="GroupSet" />
+            <End Role="Kanji" EntitySet="Kanji" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Vocabulary_Lesson" Association="KRDatabaseModel.Store.FK_Vocabulary_Lesson">
+            <End Role="Lesson" EntitySet="Lesson" />
+            <End Role="Vocabulary" EntitySet="Vocabulary" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="GroupSet">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Meaning" Type="nvarchar" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="Kanji">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Word" Type="nvarchar" MaxLength="100" />
+          <Property Name="Onyomi" Type="nvarchar" MaxLength="100" />
+          <Property Name="Kunyomi" Type="nvarchar" MaxLength="100" />
+          <Property Name="Mean" Type="nvarchar" MaxLength="100" />
+          <Property Name="Voc1" Type="nvarchar" MaxLength="100" />
+          <Property Name="Voc2" Type="nvarchar" MaxLength="100" />
+          <Property Name="Voc3" Type="nvarchar" MaxLength="100" />
+          <Property Name="Voc4" Type="nvarchar" MaxLength="100" />
+          <Property Name="Voc5" Type="nvarchar" MaxLength="100" />
+          <Property Name="Hira1" Type="nvarchar" MaxLength="100" />
+          <Property Name="Hira2" Type="nvarchar" MaxLength="100" />
+          <Property Name="Hira3" Type="nvarchar" MaxLength="100" />
+          <Property Name="Hira4" Type="nvarchar" MaxLength="100" />
+          <Property Name="Hira5" Type="nvarchar" MaxLength="100" />
+          <Property Name="Mean1" Type="nvarchar" MaxLength="100" />
+          <Property Name="Mean2" Type="nvarchar" MaxLength="100" />
+          <Property Name="Mean3" Type="nvarchar" MaxLength="100" />
+          <Property Name="Mean4" Type="nvarchar" MaxLength="100" />
+          <Property Name="Mean5" Type="nvarchar" MaxLength="100" />
+          <Property Name="Level" Type="nvarchar" MaxLength="5" />
+          <Property Name="GroupSetID" Type="int" />
+          <Property Name="IsLiked" Type="bit" />
+        </EntityType>
+        <EntityType Name="Lesson">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Vocabulary">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Hiragana" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Kanji" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Mean" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="LessonID" Type="int" Nullable="false" />
+          <Property Name="Type" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Kanji_GroupSet">
+          <End Role="GroupSet" Type="KRDatabaseModel.Store.GroupSet" Multiplicity="0..1" />
+          <End Role="Kanji" Type="KRDatabaseModel.Store.Kanji" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GroupSet">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Kanji">
+              <PropertyRef Name="GroupSetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Vocabulary_Lesson">
+          <End Role="Lesson" Type="KRDatabaseModel.Store.Lesson" Multiplicity="1" />
+          <End Role="Vocabulary" Type="KRDatabaseModel.Store.Vocabulary" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lesson">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Vocabulary">
+              <PropertyRef Name="LessonID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="KRDatabaseModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="KRDatabaseEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="GroupSet" EntityType="KRDatabaseModel.GroupSet" />
+          <EntitySet Name="Kanji" EntityType="KRDatabaseModel.Kanji" />
+          <EntitySet Name="Lesson" EntityType="KRDatabaseModel.Lesson" />
+          <EntitySet Name="sysdiagrams" EntityType="KRDatabaseModel.sysdiagrams" />
+          <EntitySet Name="Vocabulary" EntityType="KRDatabaseModel.Vocabulary" />
+          <AssociationSet Name="FK_Kanji_GroupSet" Association="KRDatabaseModel.FK_Kanji_GroupSet">
+            <End Role="GroupSet" EntitySet="GroupSet" />
+            <End Role="Kanji" EntitySet="Kanji" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Vocabulary_Lesson" Association="KRDatabaseModel.FK_Vocabulary_Lesson">
+            <End Role="Lesson" EntitySet="Lesson" />
+            <End Role="Vocabulary" EntitySet="Vocabulary" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="GroupSet">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Meaning" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Kanji">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Word" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Onyomi" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Kunyomi" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Mean" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Voc1" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Voc2" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Voc3" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Voc4" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Voc5" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Hira1" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Hira2" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Hira3" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Hira4" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Hira5" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Mean1" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Mean2" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Mean3" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Mean4" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Mean5" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Level" Type="String" MaxLength="5" Unicode="true" FixedLength="false" />
+          <Property Name="GroupSetID" Type="Int32" />
+          <Property Name="IsLiked" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="Lesson">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Vocabulary">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hiragana" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Kanji" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Mean" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="LessonID" Type="Int32" Nullable="false" />
+          <Property Name="Type" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK_Kanji_GroupSet">
+          <End Role="GroupSet" Type="KRDatabaseModel.GroupSet" Multiplicity="0..1" />
+          <End Role="Kanji" Type="KRDatabaseModel.Kanji" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GroupSet">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Kanji">
+              <PropertyRef Name="GroupSetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Vocabulary_Lesson">
+          <End Role="Lesson" Type="KRDatabaseModel.Lesson" Multiplicity="1" />
+          <End Role="Vocabulary" Type="KRDatabaseModel.Vocabulary" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lesson">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Vocabulary">
+              <PropertyRef Name="LessonID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="KRDatabaseModelStoreContainer" CdmEntityContainer="KRDatabaseEntities">
+          <EntitySetMapping Name="GroupSet">
+            <EntityTypeMapping TypeName="KRDatabaseModel.GroupSet">
+              <MappingFragment StoreEntitySet="GroupSet">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Meaning" ColumnName="Meaning" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Kanji">
+            <EntityTypeMapping TypeName="KRDatabaseModel.Kanji">
+              <MappingFragment StoreEntitySet="Kanji">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Word" ColumnName="Word" />
+                <ScalarProperty Name="Onyomi" ColumnName="Onyomi" />
+                <ScalarProperty Name="Kunyomi" ColumnName="Kunyomi" />
+                <ScalarProperty Name="Mean" ColumnName="Mean" />
+                <ScalarProperty Name="Voc1" ColumnName="Voc1" />
+                <ScalarProperty Name="Voc2" ColumnName="Voc2" />
+                <ScalarProperty Name="Voc3" ColumnName="Voc3" />
+                <ScalarProperty Name="Voc4" ColumnName="Voc4" />
+                <ScalarProperty Name="Voc5" ColumnName="Voc5" />
+                <ScalarProperty Name="Hira1" ColumnName="Hira1" />
+                <ScalarProperty Name="Hira2" ColumnName="Hira2" />
+                <ScalarProperty Name="Hira3" ColumnName="Hira3" />
+                <ScalarProperty Name="Hira4" ColumnName="Hira4" />
+                <ScalarProperty Name="Hira5" ColumnName="Hira5" />
+                <ScalarProperty Name="Mean1" ColumnName="Mean1" />
+                <ScalarProperty Name="Mean2" ColumnName="Mean2" />
+                <ScalarProperty Name="Mean3" ColumnName="Mean3" />
+                <ScalarProperty Name="Mean4" ColumnName="Mean4" />
+                <ScalarProperty Name="Mean5" ColumnName="Mean5" />
+                <ScalarProperty Name="Level" ColumnName="Level" />
+                <ScalarProperty Name="GroupSetID" ColumnName="GroupSetID" />
+                <ScalarProperty Name="IsLiked" ColumnName="IsLiked" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lesson">
+            <EntityTypeMapping TypeName="KRDatabaseModel.Lesson">
+              <MappingFragment StoreEntitySet="Lesson">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="KRDatabaseModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Vocabulary">
+            <EntityTypeMapping TypeName="KRDatabaseModel.Vocabulary">
+              <MappingFragment StoreEntitySet="Vocabulary">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Hiragana" ColumnName="Hiragana" />
+                <ScalarProperty Name="Kanji" ColumnName="Kanji" />
+                <ScalarProperty Name="Mean" ColumnName="Mean" />
+                <ScalarProperty Name="LessonID" ColumnName="LessonID" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
