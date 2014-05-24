@@ -143,6 +143,12 @@
             this.TabVRecoder = new System.Windows.Forms.TabPage();
             this.TabKaiwa = new System.Windows.Forms.TabPage();
             this.TabExport = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dgvExport = new System.Windows.Forms.DataGridView();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.ToolBackExport = new System.Windows.Forms.ToolStripButton();
+            this.ToolKanjiOrVoc = new System.Windows.Forms.ToolStripComboBox();
+            this.ToolGroupExport = new System.Windows.Forms.ToolStripComboBox();
             this.TabGroupSet = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbDescription = new System.Windows.Forms.Label();
@@ -184,12 +190,7 @@
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.cbSkin = new System.Windows.Forms.ToolStripComboBox();
             this.ToolExport = new System.Windows.Forms.ToolStripButton();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.ToolBackExport = new System.Windows.Forms.ToolStripButton();
-            this.ToolKanjiOrVoc = new System.Windows.Forms.ToolStripComboBox();
-            this.ToolGroupExport = new System.Windows.Forms.ToolStripComboBox();
-            this.dgvExport = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.KRTabControl.SuspendLayout();
             this.TabSlider.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -217,7 +218,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvVocabulary)).BeginInit();
             this.PanelReport.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLesson)).BeginInit();
+            this.TabKaiwa.SuspendLayout();
             this.TabExport.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvExport)).BeginInit();
+            this.toolStrip1.SuspendLayout();
             this.TabGroupSet.SuspendLayout();
             this.panel1.SuspendLayout();
             this.toolStrip2.SuspendLayout();
@@ -225,8 +229,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvGroupSet)).BeginInit();
             this.KRMenuStrip.SuspendLayout();
             this.ToolStripFooter.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvExport)).BeginInit();
             this.SuspendLayout();
             // 
             // KRTabControl
@@ -1219,6 +1221,7 @@
             // 
             // TabKaiwa
             // 
+            this.TabKaiwa.Controls.Add(this.label1);
             resources.ApplyResources(this.TabKaiwa, "TabKaiwa");
             this.TabKaiwa.Name = "TabKaiwa";
             this.TabKaiwa.UseVisualStyleBackColor = true;
@@ -1231,6 +1234,50 @@
             resources.ApplyResources(this.TabExport, "TabExport");
             this.TabExport.Name = "TabExport";
             this.TabExport.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dgvExport
+            // 
+            this.dgvExport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dgvExport, "dgvExport");
+            this.dgvExport.Name = "dgvExport";
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolBackExport,
+            this.ToolKanjiOrVoc,
+            this.ToolGroupExport});
+            resources.ApplyResources(this.toolStrip1, "toolStrip1");
+            this.toolStrip1.Name = "toolStrip1";
+            // 
+            // ToolBackExport
+            // 
+            resources.ApplyResources(this.ToolBackExport, "ToolBackExport");
+            this.ToolBackExport.Name = "ToolBackExport";
+            // 
+            // ToolKanjiOrVoc
+            // 
+            this.ToolKanjiOrVoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ToolKanjiOrVoc.Items.AddRange(new object[] {
+            resources.GetString("ToolKanjiOrVoc.Items"),
+            resources.GetString("ToolKanjiOrVoc.Items1")});
+            this.ToolKanjiOrVoc.Name = "ToolKanjiOrVoc";
+            resources.ApplyResources(this.ToolKanjiOrVoc, "ToolKanjiOrVoc");
+            this.ToolKanjiOrVoc.SelectedIndexChanged += new System.EventHandler(this.ToolKanjiOrVoc_SelectedIndexChanged);
+            // 
+            // ToolGroupExport
+            // 
+            this.ToolGroupExport.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ToolGroupExport.Name = "ToolGroupExport";
+            resources.ApplyResources(this.ToolGroupExport, "ToolGroupExport");
+            this.ToolGroupExport.SelectedIndexChanged += new System.EventHandler(this.ToolGroupExport_SelectedIndexChanged);
             // 
             // TabGroupSet
             // 
@@ -1524,49 +1571,10 @@
             resources.ApplyResources(this.ToolExport, "ToolExport");
             this.ToolExport.Name = "ToolExport";
             // 
-            // toolStrip1
+            // label1
             // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolBackExport,
-            this.ToolKanjiOrVoc,
-            this.ToolGroupExport});
-            resources.ApplyResources(this.toolStrip1, "toolStrip1");
-            this.toolStrip1.Name = "toolStrip1";
-            // 
-            // ToolBackExport
-            // 
-            resources.ApplyResources(this.ToolBackExport, "ToolBackExport");
-            this.ToolBackExport.Name = "ToolBackExport";
-            // 
-            // ToolKanjiOrVoc
-            // 
-            this.ToolKanjiOrVoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ToolKanjiOrVoc.Items.AddRange(new object[] {
-            resources.GetString("ToolKanjiOrVoc.Items"),
-            resources.GetString("ToolKanjiOrVoc.Items1")});
-            this.ToolKanjiOrVoc.Name = "ToolKanjiOrVoc";
-            resources.ApplyResources(this.ToolKanjiOrVoc, "ToolKanjiOrVoc");
-            this.ToolKanjiOrVoc.SelectedIndexChanged += new System.EventHandler(this.ToolKanjiOrVoc_SelectedIndexChanged);
-            // 
-            // ToolGroupExport
-            // 
-            this.ToolGroupExport.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ToolGroupExport.Name = "ToolGroupExport";
-            resources.ApplyResources(this.ToolGroupExport, "ToolGroupExport");
-            this.ToolGroupExport.SelectedIndexChanged += new System.EventHandler(this.ToolGroupExport_SelectedIndexChanged);
-            // 
-            // dgvExport
-            // 
-            this.dgvExport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dgvExport, "dgvExport");
-            this.dgvExport.Name = "dgvExport";
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
             // 
             // FrmMain
             // 
@@ -1622,8 +1630,13 @@
             this.PanelReport.ResumeLayout(false);
             this.PanelReport.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLesson)).EndInit();
+            this.TabKaiwa.ResumeLayout(false);
+            this.TabKaiwa.PerformLayout();
             this.TabExport.ResumeLayout(false);
             this.TabExport.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvExport)).EndInit();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.TabGroupSet.ResumeLayout(false);
             this.TabGroupSet.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -1634,9 +1647,6 @@
             this.KRMenuStrip.ResumeLayout(false);
             this.ToolStripFooter.ResumeLayout(false);
             this.ToolStripFooter.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvExport)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1804,6 +1814,7 @@
         private System.Windows.Forms.ToolStripComboBox ToolGroupExport;
         private System.Windows.Forms.DataGridView dgvExport;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
