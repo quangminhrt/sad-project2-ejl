@@ -38,3 +38,18 @@ M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KRApp\obj\De
 M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KRApp\obj\Debug\KRApplication.FrmMain.resources
 M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KRApp\obj\Debug\KRApp.Properties.Resources.resources
 M:\Users\Quang Minh\Downloads\Compressed\SAD_Project2\KRApplication\KRApp\obj\Debug\KR.App.csproj.GenerateResource.Cache
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KRApp\bin\Debug\KRApp.exe.config
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KRApp\obj\Debug\KRApp.exe
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KRApp\obj\Debug\KRApp.pdb
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KRApp\bin\Debug\KRApp.exe
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KRApp\bin\Debug\KRApp.pdb
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KRApp\bin\Debug\KR.Business.dll
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KRApp\bin\Debug\KR.DataAccess.dll
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KRApp\bin\Debug\EntityFramework.dll
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KRApp\bin\Debug\KR.Business.pdb
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KRApp\bin\Debug\KR.DataAccess.pdb
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KRApp\bin\Debug\EntityFramework.xml
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KRApp\obj\Debug\KR.App.csprojResolveAssemblyReference.cache
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KRApp\obj\Debug\KRApplication.FrmMain.resources
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KRApp\obj\Debug\KRApp.Properties.Resources.resources
+M:\Users\Quang Minh\Documents\Visual Studio 2012\Projects\Project2\KRApplication\KRApp\obj\Debug\KR.App.csproj.GenerateResource.Cache
