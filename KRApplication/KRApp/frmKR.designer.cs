@@ -149,6 +149,7 @@
             this.ToolBackExport = new System.Windows.Forms.ToolStripButton();
             this.ToolKanjiOrVoc = new System.Windows.Forms.ToolStripComboBox();
             this.ToolGroupExport = new System.Windows.Forms.ToolStripComboBox();
+            this.ToolExportOK = new System.Windows.Forms.ToolStripButton();
             this.TabGroupSet = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbDescription = new System.Windows.Forms.Label();
@@ -190,8 +191,8 @@
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.cbSkin = new System.Windows.Forms.ToolStripComboBox();
             this.ToolExport = new System.Windows.Forms.ToolStripButton();
-            this.ToolExportOK = new System.Windows.Forms.ToolStripButton();
             this.fileDialogExport = new System.Windows.Forms.SaveFileDialog();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.KRTabControl.SuspendLayout();
             this.TabSlider.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -230,6 +231,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvGroupSet)).BeginInit();
             this.KRMenuStrip.SuspendLayout();
             this.ToolStripFooter.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // KRTabControl
@@ -1222,6 +1224,7 @@
             // 
             // TabKaiwa
             // 
+            this.TabKaiwa.Controls.Add(this.axWindowsMediaPlayer1);
             this.TabKaiwa.Controls.Add(this.label1);
             resources.ApplyResources(this.TabKaiwa, "TabKaiwa");
             this.TabKaiwa.Name = "TabKaiwa";
@@ -1277,6 +1280,12 @@
             this.ToolGroupExport.Name = "ToolGroupExport";
             resources.ApplyResources(this.ToolGroupExport, "ToolGroupExport");
             this.ToolGroupExport.SelectedIndexChanged += new System.EventHandler(this.ToolGroupExport_SelectedIndexChanged);
+            // 
+            // ToolExportOK
+            // 
+            resources.ApplyResources(this.ToolExportOK, "ToolExportOK");
+            this.ToolExportOK.Name = "ToolExportOK";
+            this.ToolExportOK.Click += new System.EventHandler(this.ToolExportOK_Click);
             // 
             // TabGroupSet
             // 
@@ -1570,11 +1579,11 @@
             resources.ApplyResources(this.ToolExport, "ToolExport");
             this.ToolExport.Name = "ToolExport";
             // 
-            // ToolExportOK
+            // axWindowsMediaPlayer1
             // 
-            resources.ApplyResources(this.ToolExportOK, "ToolExportOK");
-            this.ToolExportOK.Name = "ToolExportOK";
-            this.ToolExportOK.Click += new System.EventHandler(this.ToolExportOK_Click);
+            resources.ApplyResources(this.axWindowsMediaPlayer1, "axWindowsMediaPlayer1");
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
             // 
             // FrmMain
             // 
@@ -1647,6 +1656,7 @@
             this.KRMenuStrip.ResumeLayout(false);
             this.ToolStripFooter.ResumeLayout(false);
             this.ToolStripFooter.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1816,6 +1826,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripButton ToolExportOK;
         private System.Windows.Forms.SaveFileDialog fileDialogExport;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
     }
 }
 
