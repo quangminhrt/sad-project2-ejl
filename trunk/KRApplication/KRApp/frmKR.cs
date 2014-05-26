@@ -14,6 +14,7 @@ namespace KRApplication
 {
     public partial class FrmMain : Form
     {
+        private SubForm subForm = null;
         public FrmMain()
         {
             InitializeComponent();
@@ -101,5 +102,31 @@ namespace KRApplication
         }
 
         #endregion
+
+        #region MinhTQ
+        private void TabKaiwa_Enter(object sender, EventArgs e)
+        {
+            int lession = 3;
+            String videoUrl = "D:\\Data\\Study\\FPT\\Semester 7 - Summer 2014 course\\Software Architecture & Design\\Assignment2\\SHINKISO-VCD\\Shin I - Lesson "+lession+".mpg";
+            axWMP.URL = videoUrl;
+            axWMP.Ctlcontrols.play();
+            subForm = new SubForm();
+        }
+
+        private void ToolJPN_Click(object sender, EventArgs e)
+        {
+            subForm.Close();
+            subForm = new SubForm(3,"j");
+            subForm.Show();
+        }
+
+        private void ToolVN_Click(object sender, EventArgs e)
+        {
+            subForm.Close();
+            subForm = new SubForm(3,"v");
+            subForm.Show();
+        }
+        #endregion
+
     }
 }
