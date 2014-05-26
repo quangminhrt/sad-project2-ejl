@@ -107,7 +107,7 @@ namespace KRApplication
         private void TabKaiwa_Enter(object sender, EventArgs e)
         {
             int lession = 3;
-            String videoUrl = "D:\\Data\\Study\\FPT\\Semester 7 - Summer 2014 course\\Software Architecture & Design\\Assignment2\\SHINKISO-VCD\\Shin I - Lesson "+lession+".mpg";
+            String videoUrl = "D:\\Data\\Study\\FPT\\Semester 7 - Summer 2014 course\\Software Architecture & Design\\Assignment2\\SHINKISO-VCD\\Shin I - Lesson "+5+".WMV";
             axWMP.URL = videoUrl;
             axWMP.Ctlcontrols.play();
             subForm = new SubForm();
