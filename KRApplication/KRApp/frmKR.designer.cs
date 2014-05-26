@@ -34,14 +34,10 @@
             this.TabSlider = new System.Windows.Forms.TabPage();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.ToolStripSliderBar = new System.Windows.Forms.ToolStrip();
-            this.ToolShuffleSlider = new System.Windows.Forms.ToolStripButton();
-            this.ToolSlideShow = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.cbLevelSlider = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
-            this.ToolGroupSet = new System.Windows.Forms.ToolStripButton();
-            this.ToolAddRemove = new System.Windows.Forms.ToolStripButton();
             this.Panel5_Slider = new System.Windows.Forms.Panel();
             this.dgvSlider = new System.Windows.Forms.DataGridView();
             this.dgvNotify = new System.Windows.Forms.DataGridView();
@@ -85,7 +81,6 @@
             this.toolStripLabel8 = new System.Windows.Forms.ToolStripLabel();
             this.cbMethodKQuiz = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.ToolShuffleKQuiz = new System.Windows.Forms.ToolStripButton();
             this.PanelModel_Quiz = new System.Windows.Forms.Panel();
             this.lbModelKQuiz = new System.Windows.Forms.Label();
             this.PanelVoc2_Quiz = new System.Windows.Forms.Panel();
@@ -142,20 +137,17 @@
             this.dgvLesson = new System.Windows.Forms.DataGridView();
             this.TabVRecoder = new System.Windows.Forms.TabPage();
             this.TabKaiwa = new System.Windows.Forms.TabPage();
+            this.axWMP = new AxWMPLib.AxWindowsMediaPlayer();
             this.label1 = new System.Windows.Forms.Label();
             this.TabExport = new System.Windows.Forms.TabPage();
             this.dgvExport = new System.Windows.Forms.DataGridView();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.ToolBackExport = new System.Windows.Forms.ToolStripButton();
             this.ToolKanjiOrVoc = new System.Windows.Forms.ToolStripComboBox();
             this.ToolGroupExport = new System.Windows.Forms.ToolStripComboBox();
-            this.ToolExportOK = new System.Windows.Forms.ToolStripButton();
             this.TabGroupSet = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbDescription = new System.Windows.Forms.Label();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-            this.ToolBack = new System.Windows.Forms.ToolStripButton();
-            this.ToolDetails = new System.Windows.Forms.ToolStripButton();
             this.dgvGroupDetails = new System.Windows.Forms.DataGridView();
             this.dgvGroupSet = new System.Windows.Forms.DataGridView();
             this.KRTimer = new System.Windows.Forms.Timer(this.components);
@@ -183,16 +175,26 @@
             this.mnKanjiMode = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.mnExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolNotification = new System.Windows.Forms.ToolStripSplitButton();
             this.KRTimerNotify = new System.Windows.Forms.Timer(this.components);
             this.cbSearching = new System.Windows.Forms.ComboBox();
             this.lbSearch = new System.Windows.Forms.Label();
             this.ToolStripFooter = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.cbSkin = new System.Windows.Forms.ToolStripComboBox();
-            this.ToolExport = new System.Windows.Forms.ToolStripButton();
             this.fileDialogExport = new System.Windows.Forms.SaveFileDialog();
-            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.ToolShuffleSlider = new System.Windows.Forms.ToolStripButton();
+            this.ToolSlideShow = new System.Windows.Forms.ToolStripButton();
+            this.ToolGroupSet = new System.Windows.Forms.ToolStripButton();
+            this.ToolAddRemove = new System.Windows.Forms.ToolStripButton();
+            this.ToolShuffleKQuiz = new System.Windows.Forms.ToolStripButton();
+            this.ToolBackExport = new System.Windows.Forms.ToolStripButton();
+            this.ToolExportOK = new System.Windows.Forms.ToolStripButton();
+            this.ToolBack = new System.Windows.Forms.ToolStripButton();
+            this.ToolDetails = new System.Windows.Forms.ToolStripButton();
+            this.ToolNotification = new System.Windows.Forms.ToolStripSplitButton();
+            this.ToolJPN = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.ToolVN = new System.Windows.Forms.ToolStripButton();
             this.KRTabControl.SuspendLayout();
             this.TabSlider.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -221,6 +223,7 @@
             this.PanelReport.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLesson)).BeginInit();
             this.TabKaiwa.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWMP)).BeginInit();
             this.TabExport.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExport)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -231,7 +234,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvGroupSet)).BeginInit();
             this.KRMenuStrip.SuspendLayout();
             this.ToolStripFooter.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // KRTabControl
@@ -301,20 +303,6 @@
             this.ToolAddRemove});
             this.ToolStripSliderBar.Name = "ToolStripSliderBar";
             // 
-            // ToolShuffleSlider
-            // 
-            this.ToolShuffleSlider.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.ToolShuffleSlider.AutoToolTip = false;
-            resources.ApplyResources(this.ToolShuffleSlider, "ToolShuffleSlider");
-            this.ToolShuffleSlider.Name = "ToolShuffleSlider";
-            // 
-            // ToolSlideShow
-            // 
-            this.ToolSlideShow.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.ToolSlideShow.AutoToolTip = false;
-            resources.ApplyResources(this.ToolSlideShow, "ToolSlideShow");
-            this.ToolSlideShow.Name = "ToolSlideShow";
-            // 
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
@@ -342,20 +330,6 @@
             // 
             this.toolStripLabel3.Name = "toolStripLabel3";
             resources.ApplyResources(this.toolStripLabel3, "toolStripLabel3");
-            // 
-            // ToolGroupSet
-            // 
-            this.ToolGroupSet.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.ToolGroupSet.AutoToolTip = false;
-            resources.ApplyResources(this.ToolGroupSet, "ToolGroupSet");
-            this.ToolGroupSet.Name = "ToolGroupSet";
-            // 
-            // ToolAddRemove
-            // 
-            this.ToolAddRemove.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.ToolAddRemove.AutoToolTip = false;
-            resources.ApplyResources(this.ToolAddRemove, "ToolAddRemove");
-            this.ToolAddRemove.Name = "ToolAddRemove";
             // 
             // Panel5_Slider
             // 
@@ -702,13 +676,6 @@
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
             resources.ApplyResources(this.toolStripSeparator7, "toolStripSeparator7");
-            // 
-            // ToolShuffleKQuiz
-            // 
-            this.ToolShuffleKQuiz.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.ToolShuffleKQuiz.AutoToolTip = false;
-            resources.ApplyResources(this.ToolShuffleKQuiz, "ToolShuffleKQuiz");
-            this.ToolShuffleKQuiz.Name = "ToolShuffleKQuiz";
             // 
             // PanelModel_Quiz
             // 
@@ -1224,11 +1191,18 @@
             // 
             // TabKaiwa
             // 
-            this.TabKaiwa.Controls.Add(this.axWindowsMediaPlayer1);
+            this.TabKaiwa.Controls.Add(this.axWMP);
             this.TabKaiwa.Controls.Add(this.label1);
             resources.ApplyResources(this.TabKaiwa, "TabKaiwa");
             this.TabKaiwa.Name = "TabKaiwa";
             this.TabKaiwa.UseVisualStyleBackColor = true;
+            this.TabKaiwa.Enter += new System.EventHandler(this.TabKaiwa_Enter);
+            // 
+            // axWMP
+            // 
+            resources.ApplyResources(this.axWMP, "axWMP");
+            this.axWMP.Name = "axWMP";
+            this.axWMP.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWMP.OcxState")));
             // 
             // label1
             // 
@@ -1259,11 +1233,6 @@
             resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Name = "toolStrip1";
             // 
-            // ToolBackExport
-            // 
-            resources.ApplyResources(this.ToolBackExport, "ToolBackExport");
-            this.ToolBackExport.Name = "ToolBackExport";
-            // 
             // ToolKanjiOrVoc
             // 
             this.ToolKanjiOrVoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -1280,12 +1249,6 @@
             this.ToolGroupExport.Name = "ToolGroupExport";
             resources.ApplyResources(this.ToolGroupExport, "ToolGroupExport");
             this.ToolGroupExport.SelectedIndexChanged += new System.EventHandler(this.ToolGroupExport_SelectedIndexChanged);
-            // 
-            // ToolExportOK
-            // 
-            resources.ApplyResources(this.ToolExportOK, "ToolExportOK");
-            this.ToolExportOK.Name = "ToolExportOK";
-            this.ToolExportOK.Click += new System.EventHandler(this.ToolExportOK_Click);
             // 
             // TabGroupSet
             // 
@@ -1318,18 +1281,6 @@
             this.ToolBack,
             this.ToolDetails});
             this.toolStrip2.Name = "toolStrip2";
-            // 
-            // ToolBack
-            // 
-            this.ToolBack.AutoToolTip = false;
-            resources.ApplyResources(this.ToolBack, "ToolBack");
-            this.ToolBack.Name = "ToolBack";
-            // 
-            // ToolDetails
-            // 
-            this.ToolDetails.AutoToolTip = false;
-            resources.ApplyResources(this.ToolDetails, "ToolDetails");
-            this.ToolDetails.Name = "ToolDetails";
             // 
             // dgvGroupDetails
             // 
@@ -1512,14 +1463,6 @@
             this.mnExit.Name = "mnExit";
             resources.ApplyResources(this.mnExit, "mnExit");
             // 
-            // ToolNotification
-            // 
-            this.ToolNotification.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.ToolNotification.AutoToolTip = false;
-            this.ToolNotification.DropDown = this.KRMenuStrip;
-            resources.ApplyResources(this.ToolNotification, "ToolNotification");
-            this.ToolNotification.Name = "ToolNotification";
-            // 
             // KRTimerNotify
             // 
             this.KRTimerNotify.Interval = 1000;
@@ -1543,7 +1486,9 @@
             this.toolStripLabel1,
             this.cbSkin,
             this.ToolNotification,
-            this.ToolExport});
+            this.toolStripButton1,
+            this.ToolVN,
+            this.ToolJPN});
             this.ToolStripFooter.Name = "ToolStripFooter";
             // 
             // toolStripLabel1
@@ -1572,18 +1517,96 @@
             this.cbSkin.Name = "cbSkin";
             resources.ApplyResources(this.cbSkin, "cbSkin");
             // 
-            // ToolExport
+            // ToolShuffleSlider
             // 
-            this.ToolExport.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.ToolExport.AutoToolTip = false;
-            resources.ApplyResources(this.ToolExport, "ToolExport");
-            this.ToolExport.Name = "ToolExport";
+            this.ToolShuffleSlider.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.ToolShuffleSlider.AutoToolTip = false;
+            resources.ApplyResources(this.ToolShuffleSlider, "ToolShuffleSlider");
+            this.ToolShuffleSlider.Name = "ToolShuffleSlider";
             // 
-            // axWindowsMediaPlayer1
+            // ToolSlideShow
             // 
-            resources.ApplyResources(this.axWindowsMediaPlayer1, "axWindowsMediaPlayer1");
-            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.ToolSlideShow.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.ToolSlideShow.AutoToolTip = false;
+            resources.ApplyResources(this.ToolSlideShow, "ToolSlideShow");
+            this.ToolSlideShow.Name = "ToolSlideShow";
+            // 
+            // ToolGroupSet
+            // 
+            this.ToolGroupSet.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.ToolGroupSet.AutoToolTip = false;
+            resources.ApplyResources(this.ToolGroupSet, "ToolGroupSet");
+            this.ToolGroupSet.Name = "ToolGroupSet";
+            // 
+            // ToolAddRemove
+            // 
+            this.ToolAddRemove.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.ToolAddRemove.AutoToolTip = false;
+            resources.ApplyResources(this.ToolAddRemove, "ToolAddRemove");
+            this.ToolAddRemove.Name = "ToolAddRemove";
+            // 
+            // ToolShuffleKQuiz
+            // 
+            this.ToolShuffleKQuiz.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.ToolShuffleKQuiz.AutoToolTip = false;
+            resources.ApplyResources(this.ToolShuffleKQuiz, "ToolShuffleKQuiz");
+            this.ToolShuffleKQuiz.Name = "ToolShuffleKQuiz";
+            // 
+            // ToolBackExport
+            // 
+            resources.ApplyResources(this.ToolBackExport, "ToolBackExport");
+            this.ToolBackExport.Name = "ToolBackExport";
+            // 
+            // ToolExportOK
+            // 
+            resources.ApplyResources(this.ToolExportOK, "ToolExportOK");
+            this.ToolExportOK.Name = "ToolExportOK";
+            this.ToolExportOK.Click += new System.EventHandler(this.ToolExportOK_Click);
+            // 
+            // ToolBack
+            // 
+            this.ToolBack.AutoToolTip = false;
+            resources.ApplyResources(this.ToolBack, "ToolBack");
+            this.ToolBack.Name = "ToolBack";
+            // 
+            // ToolDetails
+            // 
+            this.ToolDetails.AutoToolTip = false;
+            resources.ApplyResources(this.ToolDetails, "ToolDetails");
+            this.ToolDetails.Name = "ToolDetails";
+            // 
+            // ToolNotification
+            // 
+            this.ToolNotification.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.ToolNotification.AutoToolTip = false;
+            this.ToolNotification.DropDown = this.KRMenuStrip;
+            resources.ApplyResources(this.ToolNotification, "ToolNotification");
+            this.ToolNotification.Name = "ToolNotification";
+            // 
+            // ToolJPN
+            // 
+            this.ToolJPN.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.ToolJPN.AutoToolTip = false;
+            this.ToolJPN.Image = global::KRApp.Properties.Resources.SelectLesson;
+            resources.ApplyResources(this.ToolJPN, "ToolJPN");
+            this.ToolJPN.Name = "ToolJPN";
+            this.ToolJPN.Click += new System.EventHandler(this.ToolJPN_Click);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton1.AutoToolTip = false;
+            resources.ApplyResources(this.toolStripButton1, "toolStripButton1");
+            this.toolStripButton1.Name = "toolStripButton1";
+            // 
+            // ToolVN
+            // 
+            this.ToolVN.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.ToolVN.AutoToolTip = false;
+            this.ToolVN.Image = global::KRApp.Properties.Resources.SelectLesson;
+            resources.ApplyResources(this.ToolVN, "ToolVN");
+            this.ToolVN.Name = "ToolVN";
+            this.ToolVN.Click += new System.EventHandler(this.ToolVN_Click);
             // 
             // FrmMain
             // 
@@ -1641,6 +1664,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvLesson)).EndInit();
             this.TabKaiwa.ResumeLayout(false);
             this.TabKaiwa.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWMP)).EndInit();
             this.TabExport.ResumeLayout(false);
             this.TabExport.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExport)).EndInit();
@@ -1656,10 +1680,14 @@
             this.KRMenuStrip.ResumeLayout(false);
             this.ToolStripFooter.ResumeLayout(false);
             this.ToolStripFooter.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void TabKaiwa_GotFocus(object sender, System.EventArgs e)
+        {
+            throw new System.NotImplementedException();
         }
 
         #endregion
@@ -1816,7 +1844,7 @@
         private System.Windows.Forms.TabPage TabKaiwa;
         private System.Windows.Forms.TabPage TabVRecoder;
         private System.Windows.Forms.ToolStripButton ToolAddRemove;
-        private System.Windows.Forms.ToolStripButton ToolExport;
+        private System.Windows.Forms.ToolStripButton ToolJPN;
         private System.Windows.Forms.TabPage TabExport;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton ToolBackExport;
@@ -1826,7 +1854,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripButton ToolExportOK;
         private System.Windows.Forms.SaveFileDialog fileDialogExport;
-        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private AxWMPLib.AxWindowsMediaPlayer axWMP;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton ToolVN;
     }
 }
 
