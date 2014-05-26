@@ -69,3 +69,23 @@ F:\Project2\KRApplication\KRApp\bin\Debug\EntityFramework.dll
 F:\Project2\KRApplication\KRApp\bin\Debug\KR.Business.pdb
 F:\Project2\KRApplication\KRApp\bin\Debug\KR.DataAccess.pdb
 F:\Project2\KRApplication\KRApp\bin\Debug\EntityFramework.xml
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KRApp\bin\Debug\KRApp.exe.config
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KRApp\obj\Debug\Interop.WMPLib.dll
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KRApp\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KRApp\obj\Debug\KR.App.csproj.ResolveComReference.cache
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KRApp\obj\Debug\KRApp.exe
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KRApp\obj\Debug\KRApp.pdb
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KRApp\bin\Debug\KRApp.exe
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KRApp\bin\Debug\KRApp.pdb
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KRApp\bin\Debug\KR.Business.dll
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KRApp\bin\Debug\KR.DataAccess.dll
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KRApp\bin\Debug\EntityFramework.dll
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KRApp\bin\Debug\KR.Business.pdb
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KRApp\bin\Debug\KR.DataAccess.pdb
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KRApp\bin\Debug\EntityFramework.xml
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KRApp\bin\Debug\Interop.WMPLib.dll
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KRApp\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KRApp\obj\Debug\KR.App.csprojResolveAssemblyReference.cache
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KRApp\obj\Debug\KRApplication.FrmMain.resources
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KRApp\obj\Debug\KRApp.Properties.Resources.resources
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KRApp\obj\Debug\KR.App.csproj.GenerateResource.Cache

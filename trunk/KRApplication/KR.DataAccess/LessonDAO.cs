@@ -25,6 +25,24 @@ namespace KR.DataAccess
                 return list;
             }
         }
+        public static List<Lesson> GetAll()
+        {
+            using (KRDatabaseEntities db = new KRDatabaseEntities())
+            {
+                List<Lesson> list = new List<Lesson>();
+                try
+                {
+                    list = (from l in db.Lesson
+                            orderby l.Name ascending
+                            select l).ToList();
+                }
+                catch (Exception)
+                {
+
+                }
+                return list;
+            }
+        }
 
         public static Lesson GetLessonByName(string name)
         {

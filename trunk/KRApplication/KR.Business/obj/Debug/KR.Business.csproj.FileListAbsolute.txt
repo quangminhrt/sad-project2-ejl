@@ -34,3 +34,12 @@ F:\Project2\KRApplication\KR.Business\bin\Debug\EntityFramework.xml
 F:\Project2\KRApplication\KR.Business\obj\Debug\KR.Business.csprojResolveAssemblyReference.cache
 F:\Project2\KRApplication\KR.Business\obj\Debug\KR.Business.dll
 F:\Project2\KRApplication\KR.Business\obj\Debug\KR.Business.pdb
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KR.Business\bin\Debug\KR.Business.dll
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KR.Business\bin\Debug\KR.Business.pdb
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KR.Business\bin\Debug\KR.DataAccess.dll
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KR.Business\bin\Debug\EntityFramework.dll
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KR.Business\bin\Debug\KR.DataAccess.pdb
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KR.Business\bin\Debug\EntityFramework.xml
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KR.Business\obj\Debug\KR.Business.csprojResolveAssemblyReference.cache
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KR.Business\obj\Debug\KR.Business.dll
+C:\Users\Welcome\Documents\Visual Studio 2012\Projects\Project8\KRApplication\KR.Business\obj\Debug\KR.Business.pdb
