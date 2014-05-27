@@ -192,9 +192,9 @@
             this.ToolBack = new System.Windows.Forms.ToolStripButton();
             this.ToolDetails = new System.Windows.Forms.ToolStripButton();
             this.ToolNotification = new System.Windows.Forms.ToolStripSplitButton();
-            this.ToolJPN = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.ToolVN = new System.Windows.Forms.ToolStripButton();
+            this.ToolJPN = new System.Windows.Forms.ToolStripButton();
             this.KRTabControl.SuspendLayout();
             this.TabSlider.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -1583,15 +1583,6 @@
             resources.ApplyResources(this.ToolNotification, "ToolNotification");
             this.ToolNotification.Name = "ToolNotification";
             // 
-            // ToolJPN
-            // 
-            this.ToolJPN.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.ToolJPN.AutoToolTip = false;
-            this.ToolJPN.Image = global::KRApp.Properties.Resources.SelectLesson;
-            resources.ApplyResources(this.ToolJPN, "ToolJPN");
-            this.ToolJPN.Name = "ToolJPN";
-            this.ToolJPN.Click += new System.EventHandler(this.ToolJPN_Click);
-            // 
             // toolStripButton1
             // 
             this.toolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -1603,10 +1594,17 @@
             // 
             this.ToolVN.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.ToolVN.AutoToolTip = false;
-            this.ToolVN.Image = global::KRApp.Properties.Resources.SelectLesson;
             resources.ApplyResources(this.ToolVN, "ToolVN");
             this.ToolVN.Name = "ToolVN";
             this.ToolVN.Click += new System.EventHandler(this.ToolVN_Click);
+            // 
+            // ToolJPN
+            // 
+            this.ToolJPN.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.ToolJPN.AutoToolTip = false;
+            resources.ApplyResources(this.ToolJPN, "ToolJPN");
+            this.ToolJPN.Name = "ToolJPN";
+            this.ToolJPN.Click += new System.EventHandler(this.ToolJPN_Click);
             // 
             // FrmMain
             // 
